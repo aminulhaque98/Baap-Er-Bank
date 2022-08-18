@@ -30,7 +30,7 @@ const withdrawButtonHandler = document.getElementById('btn-Withdraw').addEventLi
 
 
     if (newWithdrawAmount > previousBalanceTotal) {
-        alert('please valid deposit');
+        alert('please provide a valid deposit');
         return;
     }
 
