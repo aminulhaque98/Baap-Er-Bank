@@ -6,6 +6,14 @@ const depostButtonHandler = document.getElementById('btn-Deposit').addEventListe
     const newDepositAmountString = depositField.value;
     const newDepositAmount = parseFloat(newDepositAmountString);
 
+    // step-7:clear the deposit field 
+    depositField.value = '';
+
+    if (isNaN(newDepositAmount)) {
+        alert('please provide a valid Amount');
+        return;
+    }
+
     // step-3:get the current deposit total 
     // step-3.1: for non-input (element other than input textarea)use innerText to get the text 
     const totalDepositElement = document.getElementById('Deposit-Total');
@@ -27,7 +35,6 @@ const depostButtonHandler = document.getElementById('btn-Deposit').addEventListe
     // ste the balance total 
     totalBalanceElement.innerText = currentTotalBalance;
 
-    // step-7:clear the deposit field 
-    depositField.value = '';
+
 
 })
