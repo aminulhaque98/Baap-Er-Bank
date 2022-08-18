@@ -1,5 +1,4 @@
-// step-1:add event listener to the deposit button 
-
+// step-1:add event listener to the deposit button -----
 const depostButtonHandler = document.getElementById('btn-Deposit').addEventListener('click', function () {
     // step-2:get the diposit amount form the diposit input field 
     // step-2.1: for input field use .value to the value the input field 
@@ -19,8 +18,7 @@ const depostButtonHandler = document.getElementById('btn-Deposit').addEventListe
     //    set the deposit total 
     totalDepositElement.innerText = currentTotal;
 
-    // step-5 get balanec currant total ------
-
+    // step-5 get balanec currant total -----------
     const totalBalanceElement = document.getElementById('Total-balance');
     const previousBalanceTotalString = totalBalanceElement.innerText;
     const previousBalanceTotal = parseFloat(previousBalanceTotalString);
