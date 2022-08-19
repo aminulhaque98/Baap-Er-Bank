@@ -19,7 +19,7 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     // danger :do not varify email password on the client side ,
     // step-4: verify email and password 
 
-    if (email === 'aminul@gmail.com' && password === 'nihad') {
+    if ((email === 'aminul@gmail.com' || email === 'moni22@gmail.com' || email === 'rejaul3@gmail.com' || email === 'soiful@gmail.com') && password === 'nihad') {
         window.location.href = 'bank.html'
     }
     else {
